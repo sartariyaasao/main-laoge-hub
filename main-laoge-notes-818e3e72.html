@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>老哥网 · 再次遇见</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #faf9f7;
+      color: #1e1c1a;
+      font-family: system-ui, -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+    .page {
+      max-width: 680px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    /* hero 区域 ———— 克制留白，只有一句话和一条细线 */
+    .hero {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #d9d4ce;
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      color: #2b2826;
+      margin-bottom: 0.75rem;
+    }
+    .hero .sub {
+      font-size: 1rem;
+      color: #6b6660;
+      font-weight: 350;
+      margin-top: 0.25rem;
+    }
+    /* 卡片网格 */
+    .card-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+      margin: 2.5rem 0;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 1.8rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02), 0 6px 20px rgba(0,0,0,0.02);
+      transition: box-shadow 0.2s;
+      border: 1px solid #eeebe7;
+    }
+    .card:hover {
+      box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+    }
+    .card h2 {
+      font-size: 1.4rem;
+      font-weight: 450;
+      letter-spacing: -0.01em;
+      color: #262220;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .card h2 .icon {
+      font-size: 1.2rem;
+      opacity: 0.7;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #3f3b37;
+      margin-bottom: 0.4rem;
+    }
+    .card .extra {
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+      color: #7a746e;
+      border-left: 2px solid #d6d0c9;
+      padding-left: 1rem;
+    }
+    /* 自然链接段落 —— 放在卡片下方，形成叙述流 */
+    .note-section {
+      margin: 2rem 0 3rem;
+      background: transparent;
+      padding: 0.2rem 0;
+    }
+    .note-section p {
+      font-size: 0.98rem;
+      color: #2b2826;
+      margin-bottom: 1.2rem;
+      line-height: 1.8;
+    }
+    .note-section a {
+      color: #2a5c5e;
+      text-decoration: none;
+      border-bottom: 1px solid #c8d6d4;
+      transition: border-color 0.2s;
+      font-weight: 400;
+    }
+    .note-section a:hover {
+      border-bottom-color: #2a5c5e;
+    }
+    .faq-summary {
+      margin: 2.2rem 0 1.5rem;
+      border-top: 1px solid #e0dbd5;
+      padding-top: 2rem;
+    }
+    .faq-item {
+      margin-bottom: 1rem;
+    }
+    .faq-question {
+      font-weight: 450;
+      color: #1e1c1a;
+      font-size: 0.98rem;
+      margin-bottom: 0.2rem;
+    }
+    .faq-answer {
+      font-size: 0.9rem;
+      color: #5d5751;
+      padding-left: 0.5rem;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #e1dbd4;
+      margin: 1.8rem 0;
+    }
+    .footer-note {
+      font-size: 0.8rem;
+      color: #938c84;
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e7e2db;
+    }
+    /* 响应式 */
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .card {
+        padding: 1.5rem 1.2rem;
+      }
+      .card-grid {
+        gap: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <!-- hero —— 再次到访的语气 -->
+  <div class="hero">
+    <h1>老哥网 · 回来看看</h1>
+    <div class="sub">有些地方，值得反复路过</div>
+  </div>
+
+  <!-- 信息卡片式：主视觉 / 用途 / 适合人群 -->
+  <div class="card-grid">
+    <div class="card">
+      <h2><span class="icon">◷</span> 主视觉 · 常来常新</h2>
+      <p>每一次打开 <a href="https://main-laoge.com" style="color:inherit; border-bottom:1px solid #c8b9ae; text-decoration:none;">老哥网</a>，界面都保持着克制的秩序感。没有弹窗，没有闪烁的横幅，只有干净的内容流。</p>
+      <p>这种稳定，让再次访问变成一种习惯——就像走进一家熟悉的书店，知道书放在哪一排。</p>
+      <div class="extra">你上次读到一半的文章，应该还在原来的位置。</div>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">⊞</span> 用途卡片 · 安静的收藏夹</h2>
+      <p>适合用来存放那些「以后会用到」的网页、工具、文章片段。不追求全面，只在意存取顺手。</p>
+      <p>没有分类焦虑，也没有社交压力。它更像一本私人笔记本，只是恰好在线。</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">◯</span> 适合什么样的人</h2>
+      <p>喜欢把信息整理到一处，但又不想要复杂系统的人；偏好极简工具、对视觉噪音敏感的人；或者只是偶尔想找回某个链接，却总也找不到的人。</p>
+      <p>如果你也曾把网页链接扔进备忘录、聊天记录或临时文档，那么这里或许对味。</p>
+    </div>
+  </div>
+
+  <!-- 自然链接段落，嵌入「老哥网」—— 从持续关注的角度 -->
+  <div class="note-section">
+    <p>前阵子整理书签，翻出几个之前标记了「有空再看」的页面，大部分都打不开了。有些域名换了，有些直接消失了。这才意识到，网络上的东西比想象中更容易过期。而<strong><a href="https://main-laoge.com">老哥网</a></strong>一直在线，没有改版，没有突然变换位置，像一块安静的锚点。</p>
+    <p>持续关注一个网站，有时候并不因为它每天更新，而是因为它的存在本身提供了一种参照。你知道那个地址还在，内容还稳，就不容易丢失方向。把<strong><a href="https://main-laoge.com">老哥网</a></strong>放进收藏夹，偶尔回来扫一眼，已经成了我个人的一个小习惯。</p>
+  </div>
+
+  <!-- FAQ 摘要（克制版本） -->
+  <div class="faq-summary">
+    <div class="faq-item">
+      <div class="faq-question">· 页面加载速度如何？</div>
+      <div class="faq-answer">体感很快，没有多余脚本。即使网络一般，也能在几秒内完整显示。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">· 需要注册才能使用吗？</div>
+      <div class="faq-answer">目前大部分内容无需登录即可浏览。部分功能可能需要简单注册，但流程很短。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">· 会突然改版或下线吗？</div>
+      <div class="faq-answer">从过往记录看，<a href="https://main-laoge.com" style="color:#2a5c5e; text-decoration:none; border-bottom:1px solid #bcc9c5;">老哥网</a>保持了相当长的稳定期，风格也延续至今。短期没有大改迹象。</div>
+    </div>
+  </div>
+
+  <hr />
+  <div class="footer-note">
+    · 有时候，反复访问一个网站是因为它的沉默 ·
+  </div>
+</div>
+</body>
+</html>
